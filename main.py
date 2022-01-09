@@ -1,14 +1,3 @@
-# Quick little script to read MRT (RFC6396) BGP route dumps
-# and extract AS prefix announcements, and peering relationships
-# Data is then stored in a NoSQL database due to the relatively simple structure of the data
-# and the speed NoSQL database engines provide
-
-# Routing data is pulled from RIPE NCC's Routing and Information Services
-
-# local data is then compared with data in the database, and changes are to be made accordingly
-# ex: locally stored prefix 1.0.0.0/8 begins to be announced by cloudflare (AS13335), overwrite remote prefix entry
-# ex2: remotely stored prefix 192.77.9.0/24 is no longer announced by anyone, remove it
-
 # Made by Ashley Statuto <ashley@statuto.org> in Janurary of 2021
 import hashlib
 import math
