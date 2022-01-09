@@ -2,6 +2,7 @@
 Quick little script to read MRT (RFC6396) BGP route dumps
 and extract AS prefix announcements, and peering relationships
 
+This script is a precursor to a RFC-compliant full parser
 
 Data is then stored in a NoSQL database due to the relatively simple structure of the data
 and the speed NoSQL database engines provide
